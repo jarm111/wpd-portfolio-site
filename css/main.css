@@ -1,0 +1,356 @@
+/**** Stylesheet for Jarmo's pages *****/
+
+
+/* COLOR PALETTE
+#999999
+#d1d1d1
+#FFFFFF
+#FFFCFC
+*/
+
+* {
+    /*border: dotted 1px #d1d1d1;*/
+    /*width & height includes content, padding and border, not margin*/
+    box-sizing: border-box;
+}
+
+
+/* clears float after row-elements */
+
+.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+/* select all column-classes */
+
+[class*="col-"] {
+    float: left;
+    padding: 1.0em;
+    width: 100%;
+}
+
+body {
+    background-color: #FFFCFC;
+    /*google font*/
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 95%;
+    margin: 0;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+
+/*** HEADER ***/
+
+header {
+    background-color: #d1d1d1;
+    padding: 0;
+}
+
+h1 {
+    background-color: #999999;
+    color: #FFFFFF;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0;
+    padding: .5em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*** NAVIGATION ***/
+
+nav {
+    margin: 0.7em 0;
+}
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0.3em 0;
+    padding: 0;
+}
+
+nav #current {
+    border-bottom: 2px solid #999999;
+}
+
+nav a:link {
+    color: #999999;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+nav a:visited {
+    color: #999999;
+}
+
+nav a:hover {
+    background-color: #d1d1d1;
+}
+
+nav a#pull {
+    background-color: #999999;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.2em;
+    padding: .2em 15px;
+    position: relative;
+    width: 100%;
+}
+
+#trigram {
+    font-size: 1.5em;
+    position: absolute;
+    right: 18px;
+    top: -5px;
+}
+
+
+/*** CONTENT ***/
+
+main {
+    margin: 0 15px;
+}
+
+h2 {
+    color: #999999;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    padding: .5em 0;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 1em 0;
+}
+
+pre {
+    margin: 0;
+}
+
+table.skills {
+    margin-bottom: 1em;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.skillname {
+    font-size: 1.1em;
+}
+
+figure {
+    margin: 0;
+}
+
+
+/* Images styling */
+
+.fixedsizeimg {
+    height: auto;
+    max-width: 150px;
+    width: 100%;
+}
+
+.originalsizeimg {
+    height: auto;
+    max-width: 120px;
+}
+
+
+/* Link styling */
+
+a {
+    color: #265C83;
+    -webkit-transition: color .4s;
+    transition: color .4s;
+}
+
+a:link,
+a:visited {
+    color: #265C83;
+}
+
+a:hover {
+    color: #7FDBFF;
+}
+
+a:active {
+    color: #007BE6;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a img:hover {
+    opacity: 0.8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+/* List styling */
+
+ol,
+ul {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.circlelist {
+    list-style-type: circle;
+    padding-left: 25px;
+}
+
+.circlelist li {
+    margin-bottom: .5em;
+}
+
+.squarelist {
+    list-style-type: square;
+}
+
+.dashlist {
+    list-style: none;
+    /* Remove list bullets */
+    padding: 0;
+}
+
+.dashlist li {
+    padding-left: 10px;
+}
+
+.dashlist li:before {
+    content: "–";
+    /* Insert content that looks like bullets */
+    padding-right: 8px;
+}
+
+
+/*** FOOTER ***/
+
+footer {
+    background-color: #d1d1d1;
+    padding: 1em;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+footer ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*** RESPONSIVE: Desktop ***/
+
+@media only screen and (min-width: 600px) {
+    /* 12 column grid layout */
+    /* The number of columns inside a row should always add up to 12 */
+    [class*="col-"] {
+        padding: 1.5em;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    body {
+        font-size: 100%;
+    }
+    .fixedsizeimg {
+        max-width: 200px;
+    }
+    .originalsizeimg {
+        max-width: 100%;
+    }
+    /* Header gets more filling */
+    header {
+        padding: 3em 0;
+    }
+    /* Nav-bar spreads vertically and evenly across container */
+    nav ul {
+        display: table;
+        margin: 0 auto;
+        table-layout: fixed;
+        width: 80%;
+    }
+    nav ul li {
+        display: table-cell;
+        /*Why does 1% work?*/
+        width: 1%;
+    }
+    /* Hide mobile menu */
+    nav a#pull {
+        display: none;
+    }
+    /* Center Document page */
+    .pagemargin {
+        margin: 0 auto;
+        max-width: 66.6666%
+    }
+    /* Footer displays vertically */
+    footer ul li {
+        display: inline;
+    }
+    footer ul li:first-child {
+        margin-right: 1em;
+    }
+    footer ul li:last-child {
+        margin-left: 1em;
+    }
+}

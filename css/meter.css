@@ -1,0 +1,18 @@
+.meter { 
+	height: 15px;  /* Can be anything */
+	position: relative;
+    border: 1px solid black;
+	border-radius: 25px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #999999;
+  position: relative;
+  overflow: hidden;
+}

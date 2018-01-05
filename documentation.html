@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarmo's Site</title>
+    <meta name="author" content="Jarmo" />
+    <meta name="description" content="Welcome to my homepage." />
+    <meta name="keywords" content="personal homepage, resume, porfolio, html, css, web page development, programming, game development" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="css/lightbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <h1>Jarmo's Site</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="likes.html">Likes</a></li>
+                <li><a id="current" href="documentation.html">Documentation</a></li>
+            </ul>
+            <a href="#" id="pull">Menu<span id='trigram'>&#9776;</span></a>
+        </nav>
+
+        <main class="pagemargin">
+
+            <h2>Project Goals</h2>
+
+            <p>The purpose of the project is to demonstrate the skill of building static websites utilizing HTML5, CSS, JavaScript and responsive web design.</p>
+
+            <p>My goal for the project was to make a homepage for myself that acts as a portfolio, where I could showcase my school works and projects.</p>
+
+            <p>Learning goals I set for myself: </p>
+
+            <ol>
+                <li>Project planning and management</li>
+                <li>Content creation for website</li>
+                <li>Template design with drawing software</li>
+                <li>Writing html and css code from scratch based on the template</li>
+                <li>Responsive web design</li>
+                <li>Adding JavaScript functionality</li>
+            </ol>
+
+            <h2>Programs Used</h2>
+            <ul class="squarelist">
+                <li> <a href="http://brackets.io/">Adobe Brackets: writing code</a>
+                </li>
+                <li> <a href="http://www.getpaint.net/">Paint.NET: picture editing</a>
+                </li>
+                <li> <a href="http://pencil.evolus.vn/">Pencil: layout design</a>
+                </li>
+                <li> <a href="https://products.office.com/en/word">Microsoft Word: document writing</a>
+                </li>
+            </ul>
+
+            <h2>Libraries, Plugins and Solutions Utilized</h2>
+            <ul class="squarelist">
+                <li> <a href="https://jquery.com/">jQuery</a>
+                </li>
+                <li> <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox</a>
+                </li>
+                <li><a href="http://www.w3schools.com/css/css_rwd_grid.asp">W3 Schools: Responsive 12 column grid view</a></li>
+                <li> <a href="https://css-tricks.com/css3-progress-bars/">CSS-Tricks: Progress bars</a>
+                </li>
+                <li> <a href="http://www.hongkiat.com/blog/responsive-web-nav/">Hongkiat: Responsive Navigation</a>
+                </li>
+                <li> <a href="http://mrmrs.io/links/">mrmrs: Nicer Links</a>
+                </li>
+                <li> <a href="https://codepen.io/nxworld/pen/ZYNOBZ">Yaoa: CSS image hover effects</a>
+                </li>
+            </ul>
+
+            <h2>Browsers Tested With</h2>
+            <ul class="dashlist">
+                <li>Google Chrome v56 </li>
+                <li>Mozilla Firefox v51</li>
+                <li>Microsoft Edge v38</li>
+                <li>Microsoft Internet Explorer v11</li>
+            </ul>
+
+            <h2>Usage of JavaScript</h2>
+            <ul class="dashlist">
+                <li>Lightbox</li>
+                <li>Last modified date</li>
+                <li>Mobile navigation toggle</li>
+            </ul>
+
+            <h2>Folder Structure</h2>
+            <pre>
+    Final_Assignment_C_Website_Project
+        /bigpics
+        /images
+        /js
+        /pics
+        documentation.html
+        index.html
+        likes.html
+        portfolio.html
+                </pre>
+
+            <h2>Main Sections</h2>
+            <pre>
+    body
+      container
+        header
+        nav
+        main
+            row/column-divs
+        footer
+                </pre>
+            <div class="row">
+                <h2>Original Layout Designs</h2>
+
+                <figure class="col-6">
+                    <a href="bigpics/Layout_design_desktop.png" data-lightbox="documentation"><img class="fixedsizeimg" src="pics/layoutdesktop.png" alt=""></a>
+                    <figcaption>Layout design for desktop</figcaption>
+                </figure>
+                <figure class="col-6">
+                    <a href="bigpics/Layout_design_mobile.png" data-lightbox="documentation"><img class="fixedsizeimg" src="pics/layoutmobile.png" alt=""></a>
+                    <figcaption>Layout design for mobile</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <ul>
+                <li>Made By: Jarmo Syvälahti</li>
+                <li>Last updated: <span id="date"></span></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
