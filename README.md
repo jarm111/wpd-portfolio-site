@@ -1,3 +1,3 @@
-# My Portfolio Site
+# WPD Portfolio Site
 
-This project is a homepage for myself that acts as a portfolio, where I showcase my school works and projects.
+Responsive portfolio site created for Web Page Development course as final project in spring 2017. Pure HTML5, CSS and couple of jQuery plugins.
